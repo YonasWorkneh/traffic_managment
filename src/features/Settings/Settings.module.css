@@ -1,0 +1,51 @@
+.form {
+  margin-top: 2rem;
+}
+.inputBox {
+  display: grid;
+  grid-template-columns: 130px 250px;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+.input {
+  min-width: 250px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 2rem;
+  border: 1px solid transparent;
+}
+.input:focus {
+  border-color: var(--brand-color);
+}
+.btns {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+.btn {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #bfbebeb7;
+  border: none;
+  cursor: pointer;
+}
+.primary {
+  color: var(--color-grey-0);
+  background-color: var(--brand-color);
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+  right: 5px;
+  top: 8px;
+}
+
+.icon {
+  font-size: 2rem;
+  cursor: pointer;
+}

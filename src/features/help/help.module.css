@@ -1,0 +1,34 @@
+.form {
+  max-width: 330px;
+}
+.form h2 {
+  margin-bottom: 3rem;
+}
+.formGroup {
+  display: grid;
+  grid-template-columns: 80px 250px;
+  margin-bottom: 1rem;
+}
+.formGroup input,
+.formGroup textarea {
+  height: 30px;
+  border-radius: 5px;
+  padding: 1.5rem 2rem;
+  border: 1px solid #d9d9d9;
+}
+.formGroup textarea {
+  height: 150px;
+}
+.formGroup input:focus {
+  border-color: var(--brand-color);
+}
+.btn {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #bfbebeb7;
+  border: none;
+  cursor: pointer;
+  color: var(--color-grey-0);
+  background-color: var(--brand-color);
+}
