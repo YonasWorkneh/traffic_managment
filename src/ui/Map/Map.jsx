@@ -70,7 +70,7 @@ const Map = ({ onSetSelectedLocation }) => {
       />
       <Marker position={[9.0314, 38.7408]}>
         <Popup>
-          A pretty CSS3 popup. <br /> Easily customizable.
+          Location pin pointing to the center of Addis Ababa, Ethiopia
         </Popup>
       </Marker>
       <LocationMarker />

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useMutation} from "@tanstack/react-query";
+import { useMutation } from "@tanstack/react-query";
 import { useForm } from "react-hook-form";
 import styles from "./Settings.module.css";
 import { updateSettings } from "../../services/settingsApi";
@@ -20,9 +20,12 @@ function SettingsForm() {
 
   function onSubmit(data) {
     const { name, location } = data;
-    if (name && location) {
-      mutate({ name, location });
+    console.log("data" + data);
+    if (name && (location || selectedLocation)) {
+      console.log("data", data);
+      mutate({ name, location: location || selectedLocation });
     } else {
+      console.log("data" + data);
       toast.error("Please fill all the fields");
     }
   }
@@ -48,6 +51,7 @@ function SettingsForm() {
               {...register("location")}
               value={selectedLocation}
               className={styles.input}
+              onChange={(e) => setSelectedLocation(e.target.value)}
             />
             <FaMapMarkerAlt
               className={`${styles.icon} ${styles.absolute}`}

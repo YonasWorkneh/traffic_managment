@@ -32,14 +32,14 @@ function Stats() {
       <div className={styles.first}>
         <Stat
           lable={"Number of Pedestrians"}
-          value={pedestrians * 1000}
+          value={pedestrians}
           trend="up"
           externalInfo="per Month"
           icon={<IoPeople />}
         />
         <Stat
           lable={"Active today"}
-          value={59}
+          value={pedestrians}
           trend="down"
           externalInfo="per Day"
           icon={<BsLightningChargeFill />}
@@ -49,7 +49,7 @@ function Stats() {
       <div className={styles.first}>
         <Stat
           lable={"Sensor Devices"}
-          value={devices * 100}
+          value={devices}
           trend="down"
           externalInfo="Month / June"
           icon={<HiDeviceMobile />}

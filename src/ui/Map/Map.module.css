@@ -4,3 +4,8 @@
   border: 1px solid var(--brand-color);
   border-radius: 1rem;
 }
+:global(:root.dark) {
+  .map {
+    border-color: #d9d9d9;
+  }
+}

@@ -1,4 +1,4 @@
-const url = "https://statistical-ketti-instalationone-22da584a.koyeb.app/api";
+const url = "https://qualified-ame-instalationone-c9906d4b.koyeb.app/api";
 
 export async function getSettings() {
   try {
@@ -19,7 +19,10 @@ export async function updateSettings(settings) {
       },
       body: JSON.stringify(settings),
     });
-    return response.json();
+    console.log(response);
+    const data = await response.json();
+    console.log(data);
+    return data;
   } catch (error) {
     console.error(error);
     throw error;
