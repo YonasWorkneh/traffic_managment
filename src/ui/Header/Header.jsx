@@ -19,7 +19,10 @@ function Header({ name = "Yonas W." }) {
       <p className={styles.message}>Welcome, {name}</p>
       <div className={styles.container}>
         <div className={`center ${styles.profile}`}>
-          <img src="/src/assets/avatar.png" alt="admin-avatar" />
+          <img
+            src="https://img.freepik.com/photos-premium/elevez-votre-marque-avatar-amical-qui-reflete-professionnalisme-ideal-pour-directeurs-ventes_1283595-18531.jpg?semt=ais_hybrid"
+            alt="admin-avatar"
+          />
         </div>
         <div className={`center ${styles.icons}`}>
           <button
