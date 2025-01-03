@@ -20,9 +20,7 @@ function SettingsForm() {
 
   function onSubmit(data) {
     const { name, location } = data;
-    console.log("data" + data);
     if (name && (location || selectedLocation)) {
-      console.log("data", data);
       mutate({ name, location: location || selectedLocation });
     } else {
       console.log("data" + data);
