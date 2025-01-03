@@ -19,7 +19,9 @@
 .formGroup textarea {
   height: 150px;
 }
-.formGroup input:focus {
+
+.formGroup input:focus,
+.formGroup textarea:focus {
   border-color: var(--brand-color);
 }
 .btn {
