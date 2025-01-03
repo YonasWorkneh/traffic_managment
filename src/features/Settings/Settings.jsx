@@ -20,8 +20,8 @@ function SettingsForm() {
 
   function onSubmit(data) {
     const { name, location } = data;
-    if (name && location) {
-      mutate({ name, location });
+    if (name && (location || selectedLocation)) {
+      mutate({ name, location: location || selectedLocation });
     } else {
       toast.error("Please fill all the fields");
     }
